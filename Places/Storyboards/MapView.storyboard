@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rsS-dx-rRl">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="IJ5-hn-ky5">
+            <objects>
+                <viewController id="rsS-dx-rRl" customClass="MapViewController" customModule="Places" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gna-PK-Slp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Myf-d6-6tk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Myf-d6-6tk" firstAttribute="top" secondItem="Gna-PK-Slp" secondAttribute="top" id="MEG-vS-A6Q"/>
+                            <constraint firstItem="Myf-d6-6tk" firstAttribute="leading" secondItem="Gna-PK-Slp" secondAttribute="leading" id="SI2-FZ-NEt"/>
+                            <constraint firstAttribute="bottom" secondItem="Myf-d6-6tk" secondAttribute="bottom" id="wFz-Nv-tuf"/>
+                            <constraint firstAttribute="trailing" secondItem="Myf-d6-6tk" secondAttribute="trailing" id="zBn-NW-GgG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xit-U0-UXw"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="Myf-d6-6tk" id="qkh-Ec-gwN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4vy-eN-G5P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="250.72463768115944" y="-60.267857142857139"/>
+        </scene>
+    </scenes>
+</document>
